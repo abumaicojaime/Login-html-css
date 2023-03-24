@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela_loggin</title>
+    <link rel="stylesheet" href="color.css">
+</head>
+<style>
+    *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+body{
+  background: url(WallpaperDog-10781174.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: auto;
+
+}
+h2{
+    font-size: 30px;
+    color: blue;
+    text-align: center;
+    margin: 20px;
+}
+.container{
+width: 359px;
+background-color: rgba(0, 0, 0, 0.845);
+border-radius: 20px 0;
+box-shadow: 1px 2px 10px rgb(0, 0, 0), 3px 6px 20px rgb(0, 0, 0);
+padding: 50px 20px;
+}
+input{
+width: 100%;
+color: white;
+height: 46px;
+background: transparent;
+border: 2px solid rgba(14, 145, 174, 0.419);
+outline: none;
+border-bottom: 1px solid rgb(86, 26, 26));
+transition: .25s ease-in-out;
+}
+.input-field{
+    background-color: transparent;
+    position: relative;
+    margin-bottom: 50px;
+    
+}
+
+label{
+    position: relative;
+    top: 0;
+    left: 0;
+    color: red;
+   transform: translateY(18px);
+   transition: .25s ease-in-out;
+}
+input:focus{
+   border-bottom: 2px solid #26a96a; 
+   box-shadow: 0 1px 0 0 #26a96a;
+}
+input:focus + label {
+transform: translateY(-14px) scale(.8);
+color: #26a96a;
+
+}
+
+button{
+    padding: 15px 50px;
+margin: 20px;
+background: transparent;
+border: 2px solid #fff;
+color: #fff;
+text-transform: uppercase;
+border-radius: 20px;
+cursor: pointer;
+transition: ease-in-out .25s;
+
+}
+button:hover{
+    background:red;
+}
+.center{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+transition: ease-in-out .25s;
+}
+a:hover{
+    color: #26a96a;
+}
+
+</style>
+<body>
+<div class="container">
+    <h2>Login</h2>
+    <form action="index.html">
+<div class="input-field">
+<label for="email">Email</label>
+<input type="email" id="email" placeholder="Digite seu email" required>
+
+</div>
+<div class="input-field">
+    <label for="senha">Senha</label>
+<input type="password" id="senha" placeholder="Senha" required>
+
+</div>
+<div class="center">
+    <button>Entrar</button>
+</div>
+    </form>
+<div class="links">
+<a href="#">Esqueci minha senha</a><br>
+<a href="info/cadastro.html">Ainda não sou cadastrado</a>
+</div>
+
+</div>  
+</body>
+</html>
